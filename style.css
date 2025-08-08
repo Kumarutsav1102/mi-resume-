@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+
+section {
+  padding: 10px 20px; /* Adjusted padding */
+}
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+main {
+  max-width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* your-info section styling */
+.yourinfo .info {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.yourinfo .info h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.yourinfo .info .contacts a {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.yourinfo .info .contacts p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name h1 {
+  margin-right: 15px;
+}
+
+.name a {
+  font-size: 22px; /* Adjusted icon size */
+  color: #fff;
+  margin-right: 5px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.name a.github {
+  background-color: #333;
+}
+.name a.linkedin {
+  background-color: #0077b5;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(160, 154, 154);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+/* technical section */
+section ol {
+  padding-top: 15px;
+  list-style-type: none;
+  padding-left: 0;
+}
+section li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+section li::before {
+  content: '➜';
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  color: #000;
+}
